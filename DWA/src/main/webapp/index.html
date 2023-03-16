@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+	gap:30px;
+	background-color:black;
+	
+}
+/* Style for the form buttons */
+form button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: auto;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+form button[name="sign"]{
+	background-color: #0099ff;
+}
+
+/* Style for the form buttons on hover */
+form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+form button[name="sign"]:hover {
+  background-color: #0589e1;
+}
+
+
+</style>
+</head>
+<body>
+	<form action="register" method="get">
+		<button type="submit" name="sign">Sign Up</button>
+	</form>
+	<form action="login" method="get">
+		<button type="submit">Log In</button>
+	</form>
+</body>
+</html>

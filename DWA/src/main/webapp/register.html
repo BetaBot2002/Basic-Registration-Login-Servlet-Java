@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	body {
+		font-family: Arial, sans-serif;
+		font-size: 18px;
+		display: flex;
+		flex-direction: column;
+		align-items:center
+		
+	}
+	
+	form {
+		display: flex;
+		flex-direction: column;
+		margin-top: 50px;
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+		width:auto;
+		padding:20px;
+		border-radius:10px;
+		font-size:16px;
+	}
+	
+	label {
+		margin-bottom: 10px;
+		text-align:left;
+		display:block;
+		
+	}
+	
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	input[type="tel"],
+	input[type="date"] {
+		padding: 10px;
+		border-radius: 5px;
+		border: none;
+		width: 300px;
+		background-color: #f2f2f2;
+	}
+	
+	button[type="submit"] {
+		background-color: #3498db;
+		color: #fff;
+		padding: 10px 10px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 14px;
+		font-weight: bold;
+		width:200px;
+	}
+	
+	button[type="submit"]:hover {
+		background-color: #2980b9;
+		
+		
+	}
+	
+</style>
+</head>
+<body>
+	<form action="register" method="post">
+		<label>Name:</label> <input type="text" name="name" placeholder="Enter Your Name" required/><br>
+		<label>Phone Number:</label> <input type="tel" id="phone" name="phone" required/><br>
+		<label>Date-of-Birth:</label> <input type="date" name="DOB" required/><br>
+		<label>Email:</label> <input type="email" name="email" required/><br>
+		<label>Password:</label> <input type="password" name="password" required/><br>
+		<button type="submit">Sign Up</button>
+		<h4>Already have an account? <a href="login">Log In</a></h4>
+	</form>
+</body>
+</html>
